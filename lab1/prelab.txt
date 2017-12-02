@@ -1,0 +1,18 @@
+PreLab 1
+
+1) What is the difference between dependence and hazard:
+Dependence exists when you are trying to read/write a register which has been recently read/written to. Refers
+to a situtation in which a p[rogram statement refer to the data of a preceding statement
+Hazard prevent the next instruction stream from being executing during its designated clock cycle. Three types: Structural, Data & Control 
+
+
+2) Structural Hazard:  They arise from resource conflicts when the hardware cannot support all possible combinations of instructions in simultaneous overlapped execution. 
+Data Hazards: They arise when an instruction depends on the result of a previous instruction in a way that is exposed by the overlapping of instructions in the pipeline. 
+
+3) Yes it is possible. One instruction can write to a register and its subsequent one can also write to the same register -- artificial hazard
+
+4) Prevents structural hazards from happening and allows for less stalls. One register can be written in the first half of the cycle and the same register can be read in the second half. This allows for bith operation in the same cycle
+Example: ADD R1 R2 R3        Need 2 cycle stalls to get the value
+         SUB R4 R1 R3
+
+5) 

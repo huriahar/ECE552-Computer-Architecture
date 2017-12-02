@@ -1,0 +1,7508 @@
+Cycle: 1
+RS int available: 4, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 0
+Tail: 1
+Insn Queue Size: 1
+0: lw        r16,0(r29)
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+1 0 1 1 1 1 1
+---------------------------------------
+Cycle: 2
+RS int available: 3, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 1
+Tail: 2
+Insn Queue Size: 1
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: lw        r16,0(r29)		1	2	0	0
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+1 0 0 1 1 1 1
+---------------------------------------
+Cycle: 3
+RS int available: 2, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 2
+Tail: 3
+Insn Queue Size: 1
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: lw        r16,0(r29)		1	2	0	0
+1: lui       r28,0x1003		2	3	0	0
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+1 0 0 1 1 1 1
+---------------------------------------
+Cycle: 4
+RS int available: 1, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 3
+Tail: 4
+Insn Queue Size: 1
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: lw        r16,0(r29)		1	2	4	0
+1: lui       r28,0x1003		2	3	0	0
+2: addiu     r28,r28,20912		3	4	0	0
+Q[0]: lui       r28,0x1003
+
+
+FP RS
+
+
+INT FU
+0: lw        r16,0(r29)		1	2	4	0
+Latency of fuINT[0]: 8
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 5
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 5
+Insn Queue Size: 1
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: lw        r16,0(r29)		1	2	4	0
+1: lui       r28,0x1003		2	3	5	0
+2: addiu     r28,r28,20912		3	4	0	0
+Q[0]: lui       r28,0x1003
+3: addiu     r17,r29,4		4	5	0	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r16,0(r29)		1	2	4	0
+Latency of fuINT[0]: 8
+1: lui       r28,0x1003		2	3	5	0
+Latency of fuINT[1]: 9
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 6
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 6
+Insn Queue Size: 2
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+Insn is NULL
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: lw        r16,0(r29)		1	2	4	0
+1: lui       r28,0x1003		2	3	5	0
+2: addiu     r28,r28,20912		3	4	0	0
+Q[0]: lui       r28,0x1003
+3: addiu     r17,r29,4		4	5	0	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r16,0(r29)		1	2	4	0
+Latency of fuINT[0]: 8
+1: lui       r28,0x1003		2	3	5	0
+Latency of fuINT[1]: 9
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 7
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 7
+Insn Queue Size: 3
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+Insn is NULL
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: lw        r16,0(r29)		1	2	4	0
+1: lui       r28,0x1003		2	3	5	0
+2: addiu     r28,r28,20912		3	4	0	0
+Q[0]: lui       r28,0x1003
+3: addiu     r17,r29,4		4	5	0	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r16,0(r29)		1	2	4	0
+Latency of fuINT[0]: 8
+1: lui       r28,0x1003		2	3	5	0
+Latency of fuINT[1]: 9
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 8
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 8
+Insn Queue Size: 3
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+Insn is NULL
+Insn is NULL
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	0	0
+Q[0]: addiu     r17,r29,4
+1: lui       r28,0x1003		2	3	5	0
+2: addiu     r28,r28,20912		3	4	0	0
+Q[0]: lui       r28,0x1003
+3: addiu     r17,r29,4		4	5	8	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r17,r29,4		4	5	8	0
+Latency of fuINT[0]: 12
+1: lui       r28,0x1003		2	3	5	0
+Latency of fuINT[1]: 9
+
+
+FP FU
+Broadcasting instruction:
+lw        r16,0(r29)		1	2	4	8
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 9
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 6
+Tail: 9
+Insn Queue Size: 3
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+Insn is NULL
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	0	0
+Q[0]: addiu     r17,r29,4
+1: sll       r2,r16,2		6	9	0	0
+2: addiu     r28,r28,20912		3	4	0	0
+3: addiu     r17,r29,4		4	5	8	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r17,r29,4		4	5	8	0
+Latency of fuINT[0]: 12
+
+
+FP FU
+Broadcasting instruction:
+lui       r28,0x1003		2	3	5	9
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 10
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 0
+Insn Queue Size: 4
+0: lw        r16,0(r29)
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	0	0
+Q[0]: addiu     r17,r29,4
+1: sll       r2,r16,2		6	9	0	0
+2: addiu     r28,r28,20912		3	4	10	0
+3: addiu     r17,r29,4		4	5	8	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r17,r29,4		4	5	8	0
+Latency of fuINT[0]: 12
+1: addiu     r28,r28,20912		3	4	10	0
+Latency of fuINT[1]: 14
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 11
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 1
+Insn Queue Size: 5
+0: addu      r4,r0,r16
+1: lui       r28,0x1003
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	0	0
+Q[0]: addiu     r17,r29,4
+1: sll       r2,r16,2		6	9	0	0
+2: addiu     r28,r28,20912		3	4	10	0
+3: addiu     r17,r29,4		4	5	8	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r17,r29,4		4	5	8	0
+Latency of fuINT[0]: 12
+1: addiu     r28,r28,20912		3	4	10	0
+Latency of fuINT[1]: 14
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 12
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 2
+Insn Queue Size: 5
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addiu     r28,r28,20912
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	0	0
+1: sll       r2,r16,2		6	9	12	0
+2: addiu     r28,r28,20912		3	4	10	0
+3: addu      r3,r3,r2		7	12	0	0
+Q[0]: addiu     r3,r17,4
+Q[1]: sll       r2,r16,2
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r16,2		6	9	12	0
+Latency of fuINT[0]: 16
+1: addiu     r28,r28,20912		3	4	10	0
+Latency of fuINT[1]: 14
+
+
+FP FU
+Broadcasting instruction:
+addiu     r17,r29,4		4	5	8	12
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 13
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 3
+Insn Queue Size: 6
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: addiu     r17,r29,4
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	0	0
+1: sll       r2,r16,2		6	9	12	0
+2: addiu     r28,r28,20912		3	4	10	0
+3: addu      r3,r3,r2		7	12	0	0
+Q[0]: addiu     r3,r17,4
+Q[1]: sll       r2,r16,2
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r16,2		6	9	12	0
+Latency of fuINT[0]: 16
+1: addiu     r28,r28,20912		3	4	10	0
+Latency of fuINT[1]: 14
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 14
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 4
+Insn Queue Size: 6
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r3,r17,4
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	14	0
+1: sll       r2,r16,2		6	9	12	0
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	0	0
+Q[0]: addiu     r3,r17,4
+Q[1]: sll       r2,r16,2
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r16,2		6	9	12	0
+Latency of fuINT[0]: 16
+1: addiu     r3,r17,4		5	8	14	0
+Latency of fuINT[1]: 18
+
+
+FP FU
+Broadcasting instruction:
+addiu     r28,r28,20912		3	4	10	14
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 15
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 5
+Insn Queue Size: 7
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sll       r2,r16,2
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	14	0
+1: sll       r2,r16,2		6	9	12	0
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	0	0
+Q[0]: addiu     r3,r17,4
+Q[1]: sll       r2,r16,2
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r16,2		6	9	12	0
+Latency of fuINT[0]: 16
+1: addiu     r3,r17,4		5	8	14	0
+Latency of fuINT[1]: 18
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 16
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 6
+Insn Queue Size: 7
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: addu      r3,r3,r2
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	14	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	0	0
+Q[0]: addiu     r3,r17,4
+
+
+FP RS
+
+
+INT FU
+1: addiu     r3,r17,4		5	8	14	0
+Latency of fuINT[1]: 18
+
+
+FP FU
+Broadcasting instruction:
+sll       r2,r16,2		6	9	12	16
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 17
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 7
+Insn Queue Size: 8
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addu      r18,r0,r3
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r3,r17,4		5	8	14	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	0	0
+Q[0]: addiu     r3,r17,4
+
+
+FP RS
+
+
+INT FU
+1: addiu     r3,r17,4		5	8	14	0
+Latency of fuINT[1]: 18
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 18
+RS int available: 0, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 0
+Tail: 8
+Insn Queue Size: 8
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r18,-21500(r28)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r29,r29,-24		10	18	0	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	0	0
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+Broadcasting instruction:
+addiu     r3,r17,4		5	8	14	18
+1 0 0 1 1 1 0
+---------------------------------------
+Cycle: 19
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 9
+Insn Queue Size: 9
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addiu     r29,r29,-24
+
+
+INT RS
+0: addiu     r29,r29,-24		10	18	0	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	19	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r3,r2		7	12	19	0
+Latency of fuINT[0]: 23
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 20
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addiu     r29,r29,-24		10	18	20	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	19	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r3,r2		7	12	19	0
+Latency of fuINT[0]: 23
+1: addiu     r29,r29,-24		10	18	20	0
+Latency of fuINT[1]: 24
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 21
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addiu     r29,r29,-24		10	18	20	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	19	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r3,r2		7	12	19	0
+Latency of fuINT[0]: 23
+1: addiu     r29,r29,-24		10	18	20	0
+Latency of fuINT[1]: 24
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 22
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: addu      r4,r0,r16
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addiu     r29,r29,-24		10	18	20	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+Q[1]: addu      r3,r3,r2
+3: addu      r3,r3,r2		7	12	19	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r3,r2		7	12	19	0
+Latency of fuINT[0]: 23
+1: addiu     r29,r29,-24		10	18	20	0
+Latency of fuINT[1]: 24
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 23
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: addu      r5,r0,r17
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addiu     r29,r29,-24		10	18	20	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	0	0
+3: addu      r4,r0,r16		11	23	0	0
+
+
+FP RS
+
+
+INT FU
+1: addiu     r29,r29,-24		10	18	20	0
+Latency of fuINT[1]: 24
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r3,r2		7	12	19	23
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 24
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	0	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	24	0
+3: addu      r4,r0,r16		11	23	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r18,r0,r3		8	14	24	0
+Latency of fuINT[0]: 28
+
+
+FP FU
+Broadcasting instruction:
+addiu     r29,r29,-24		10	18	20	24
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 25
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	0	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	24	0
+3: addu      r4,r0,r16		11	23	25	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r18,r0,r3		8	14	24	0
+Latency of fuINT[0]: 28
+1: addu      r4,r0,r16		11	23	25	0
+Latency of fuINT[1]: 29
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 26
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	0	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	24	0
+3: addu      r4,r0,r16		11	23	25	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r18,r0,r3		8	14	24	0
+Latency of fuINT[0]: 28
+1: addu      r4,r0,r16		11	23	25	0
+Latency of fuINT[1]: 29
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 27
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: addu      r6,r0,r18
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	0	0
+1: sw        r18,-21500(r28)		9	16	0	0
+Q[0]: addu      r18,r0,r3
+2: addu      r18,r0,r3		8	14	24	0
+3: addu      r4,r0,r16		11	23	25	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r18,r0,r3		8	14	24	0
+Latency of fuINT[0]: 28
+1: addu      r4,r0,r16		11	23	25	0
+Latency of fuINT[1]: 29
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 28
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: jal       0x5fb810
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	28	0
+1: sw        r18,-21500(r28)		9	16	0	0
+2: addu      r6,r0,r18		13	28	0	0
+3: addu      r4,r0,r16		11	23	25	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r5,r0,r17		12	24	28	0
+Latency of fuINT[0]: 32
+1: addu      r4,r0,r16		11	23	25	0
+Latency of fuINT[1]: 29
+
+
+FP FU
+Broadcasting instruction:
+addu      r18,r0,r3		8	14	24	28
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 29
+RS int available: 1, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r29,r29,-24
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	28	0
+1: sw        r18,-21500(r28)		9	16	29	0
+2: addu      r6,r0,r18		13	28	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r5,r0,r17		12	24	28	0
+Latency of fuINT[0]: 32
+1: sw        r18,-21500(r28)		9	16	29	0
+Latency of fuINT[1]: 33
+
+
+FP FU
+Broadcasting instruction:
+addu      r4,r0,r16		11	23	25	29
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 30
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	28	0
+1: sw        r18,-21500(r28)		9	16	29	0
+2: addu      r6,r0,r18		13	28	0	0
+3: addiu     r29,r29,-24		15	30	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r5,r0,r17		12	24	28	0
+Latency of fuINT[0]: 32
+1: sw        r18,-21500(r28)		9	16	29	0
+Latency of fuINT[1]: 33
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 31
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: sw        r31,16(r29)
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: addu      r5,r0,r17		12	24	28	0
+1: sw        r18,-21500(r28)		9	16	29	0
+2: addu      r6,r0,r18		13	28	0	0
+3: addiu     r29,r29,-24		15	30	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r5,r0,r17		12	24	28	0
+Latency of fuINT[0]: 32
+1: sw        r18,-21500(r28)		9	16	29	0
+Latency of fuINT[1]: 33
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 32
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: jal       0x602f70
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	0	0
+Q[1]: addiu     r29,r29,-24
+1: sw        r18,-21500(r28)		9	16	29	0
+2: addu      r6,r0,r18		13	28	32	0
+3: addiu     r29,r29,-24		15	30	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r6,r0,r18		13	28	32	0
+Latency of fuINT[0]: 36
+1: sw        r18,-21500(r28)		9	16	29	0
+Latency of fuINT[1]: 33
+
+
+FP FU
+Broadcasting instruction:
+addu      r5,r0,r17		12	24	28	32
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 33
+RS int available: 1, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: addiu     r29,r29,-24
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	0	0
+Q[1]: addiu     r29,r29,-24
+2: addu      r6,r0,r18		13	28	32	0
+3: addiu     r29,r29,-24		15	30	33	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r6,r0,r18		13	28	32	0
+Latency of fuINT[0]: 36
+1: addiu     r29,r29,-24		15	30	33	0
+Latency of fuINT[1]: 37
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 34
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	0	0
+Q[1]: addiu     r29,r29,-24
+1: addiu     r29,r29,-24		18	34	0	0
+Q[0]: addiu     r29,r29,-24
+2: addu      r6,r0,r18		13	28	32	0
+3: addiu     r29,r29,-24		15	30	33	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r6,r0,r18		13	28	32	0
+Latency of fuINT[0]: 36
+1: addiu     r29,r29,-24		15	30	33	0
+Latency of fuINT[1]: 37
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 35
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: sw        r16,16(r29)
+9: addu      r16,r0,r5
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	0	0
+Q[1]: addiu     r29,r29,-24
+1: addiu     r29,r29,-24		18	34	0	0
+Q[0]: addiu     r29,r29,-24
+2: addu      r6,r0,r18		13	28	32	0
+3: addiu     r29,r29,-24		15	30	33	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r6,r0,r18		13	28	32	0
+Latency of fuINT[0]: 36
+1: addiu     r29,r29,-24		15	30	33	0
+Latency of fuINT[1]: 37
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 36
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: addu      r16,r0,r5
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	0	0
+Q[1]: addiu     r29,r29,-24
+1: addiu     r29,r29,-24		18	34	0	0
+Q[0]: addiu     r29,r29,-24
+2: sw        r16,16(r29)		19	36	0	0
+Q[1]: addiu     r29,r29,-24
+3: addiu     r29,r29,-24		15	30	33	0
+
+
+FP RS
+
+
+INT FU
+1: addiu     r29,r29,-24		15	30	33	0
+Latency of fuINT[1]: 37
+
+
+FP FU
+Broadcasting instruction:
+addu      r6,r0,r18		13	28	32	36
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 37
+RS int available: 0, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	0	0
+1: addiu     r29,r29,-24		18	34	0	0
+2: sw        r16,16(r29)		19	36	0	0
+Q[1]: addiu     r29,r29,-24
+3: addu      r16,r0,r5		20	37	0	0
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+Broadcasting instruction:
+addiu     r29,r29,-24		15	30	33	37
+1 0 0 1 1 1 0
+---------------------------------------
+Cycle: 38
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	38	0
+1: addiu     r29,r29,-24		18	34	38	0
+2: sw        r16,16(r29)		19	36	0	0
+Q[1]: addiu     r29,r29,-24
+3: addu      r16,r0,r5		20	37	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,16(r29)		16	32	38	0
+Latency of fuINT[0]: 42
+1: addiu     r29,r29,-24		18	34	38	0
+Latency of fuINT[1]: 42
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 39
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	38	0
+1: addiu     r29,r29,-24		18	34	38	0
+2: sw        r16,16(r29)		19	36	0	0
+Q[1]: addiu     r29,r29,-24
+3: addu      r16,r0,r5		20	37	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,16(r29)		16	32	38	0
+Latency of fuINT[0]: 42
+1: addiu     r29,r29,-24		18	34	38	0
+Latency of fuINT[1]: 42
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 40
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	38	0
+1: addiu     r29,r29,-24		18	34	38	0
+2: sw        r16,16(r29)		19	36	0	0
+Q[1]: addiu     r29,r29,-24
+3: addu      r16,r0,r5		20	37	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,16(r29)		16	32	38	0
+Latency of fuINT[0]: 42
+1: addiu     r29,r29,-24		18	34	38	0
+Latency of fuINT[1]: 42
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 41
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: sw        r31,20(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,16(r29)		16	32	38	0
+1: addiu     r29,r29,-24		18	34	38	0
+2: sw        r16,16(r29)		19	36	0	0
+Q[1]: addiu     r29,r29,-24
+3: addu      r16,r0,r5		20	37	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,16(r29)		16	32	38	0
+Latency of fuINT[0]: 42
+1: addiu     r29,r29,-24		18	34	38	0
+Latency of fuINT[1]: 42
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 42
+RS int available: 1, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: beq       r16,r0,0x602fe0
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	0	0
+2: sw        r16,16(r29)		19	36	0	0
+3: addu      r16,r0,r5		20	37	42	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r5		20	37	42	0
+Latency of fuINT[0]: 46
+
+
+FP FU
+Broadcasting instruction:
+addiu     r29,r29,-24		18	34	38	42
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 43
+RS int available: 1, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: lw        r4,0(r16)
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	0	0
+2: sw        r16,16(r29)		19	36	43	0
+3: addu      r16,r0,r5		20	37	42	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r5		20	37	42	0
+Latency of fuINT[0]: 46
+1: sw        r16,16(r29)		19	36	43	0
+Latency of fuINT[1]: 47
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 44
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: beq       r4,r0,0x602fe0
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	0	0
+1: lw        r4,0(r16)		28	44	0	0
+Q[1]: addu      r16,r0,r5
+2: sw        r16,16(r29)		19	36	43	0
+3: addu      r16,r0,r5		20	37	42	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r5		20	37	42	0
+Latency of fuINT[0]: 46
+1: sw        r16,16(r29)		19	36	43	0
+Latency of fuINT[1]: 47
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 45
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: addiu     r5,r0,47
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	0	0
+1: lw        r4,0(r16)		28	44	0	0
+Q[1]: addu      r16,r0,r5
+2: sw        r16,16(r29)		19	36	43	0
+3: addu      r16,r0,r5		20	37	42	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r5		20	37	42	0
+Latency of fuINT[0]: 46
+1: sw        r16,16(r29)		19	36	43	0
+Latency of fuINT[1]: 47
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 46
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: jal       0x6089a0
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	46	0
+1: lw        r4,0(r16)		28	44	0	0
+2: sw        r16,16(r29)		19	36	43	0
+3: addiu     r5,r0,47		30	46	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,20(r29)		23	42	46	0
+Latency of fuINT[0]: 50
+1: sw        r16,16(r29)		19	36	43	0
+Latency of fuINT[1]: 47
+
+
+FP FU
+Broadcasting instruction:
+addu      r16,r0,r5		20	37	42	46
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 47
+RS int available: 1, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: addiu     r29,r29,-32
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	46	0
+1: lw        r4,0(r16)		28	44	47	0
+3: addiu     r5,r0,47		30	46	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,20(r29)		23	42	46	0
+Latency of fuINT[0]: 50
+1: lw        r4,0(r16)		28	44	47	0
+Latency of fuINT[1]: 51
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 48
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	46	0
+1: lw        r4,0(r16)		28	44	47	0
+2: addiu     r29,r29,-32		33	48	0	0
+3: addiu     r5,r0,47		30	46	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,20(r29)		23	42	46	0
+Latency of fuINT[0]: 50
+1: lw        r4,0(r16)		28	44	47	0
+Latency of fuINT[1]: 51
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 49
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: sw        r17,20(r29)
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r31,20(r29)		23	42	46	0
+1: lw        r4,0(r16)		28	44	47	0
+2: addiu     r29,r29,-32		33	48	0	0
+3: addiu     r5,r0,47		30	46	0	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,20(r29)		23	42	46	0
+Latency of fuINT[0]: 50
+1: lw        r4,0(r16)		28	44	47	0
+Latency of fuINT[1]: 51
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 50
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: andi      r17,r5,255
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	0	0
+Q[1]: addiu     r29,r29,-32
+1: lw        r4,0(r16)		28	44	47	0
+2: addiu     r29,r29,-32		33	48	0	0
+3: addiu     r5,r0,47		30	46	50	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r5,r0,47		30	46	50	0
+Latency of fuINT[0]: 54
+1: lw        r4,0(r16)		28	44	47	0
+Latency of fuINT[1]: 51
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 51
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	0	0
+Q[1]: addiu     r29,r29,-32
+1: andi      r17,r5,255		36	51	0	0
+Q[0]: addiu     r5,r0,47
+2: addiu     r29,r29,-32		33	48	51	0
+3: addiu     r5,r0,47		30	46	50	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r5,r0,47		30	46	50	0
+Latency of fuINT[0]: 54
+1: addiu     r29,r29,-32		33	48	51	0
+Latency of fuINT[1]: 55
+
+
+FP FU
+Broadcasting instruction:
+lw        r4,0(r16)		28	44	47	51
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 52
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	0	0
+Q[1]: addiu     r29,r29,-32
+1: andi      r17,r5,255		36	51	0	0
+Q[0]: addiu     r5,r0,47
+2: addiu     r29,r29,-32		33	48	51	0
+3: addiu     r5,r0,47		30	46	50	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r5,r0,47		30	46	50	0
+Latency of fuINT[0]: 54
+1: addiu     r29,r29,-32		33	48	51	0
+Latency of fuINT[1]: 55
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 53
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: sw        r31,24(r29)
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	0	0
+Q[1]: addiu     r29,r29,-32
+1: andi      r17,r5,255		36	51	0	0
+Q[0]: addiu     r5,r0,47
+2: addiu     r29,r29,-32		33	48	51	0
+3: addiu     r5,r0,47		30	46	50	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r5,r0,47		30	46	50	0
+Latency of fuINT[0]: 54
+1: addiu     r29,r29,-32		33	48	51	0
+Latency of fuINT[1]: 55
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 54
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: sw        r16,16(r29)
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	0	0
+Q[1]: addiu     r29,r29,-32
+1: andi      r17,r5,255		36	51	0	0
+2: addiu     r29,r29,-32		33	48	51	0
+3: sw        r31,24(r29)		37	54	0	0
+Q[1]: addiu     r29,r29,-32
+
+
+FP RS
+
+
+INT FU
+1: addiu     r29,r29,-32		33	48	51	0
+Latency of fuINT[1]: 55
+
+
+FP FU
+Broadcasting instruction:
+addiu     r5,r0,47		30	46	50	54
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 55
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: bne       r17,r0,0x6089e8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	0	0
+1: andi      r17,r5,255		36	51	55	0
+2: sw        r16,16(r29)		42	55	0	0
+3: sw        r31,24(r29)		37	54	0	0
+
+
+FP RS
+
+
+INT FU
+0: andi      r17,r5,255		36	51	55	0
+Latency of fuINT[0]: 59
+
+
+FP FU
+Broadcasting instruction:
+addiu     r29,r29,-32		33	48	51	55
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 56
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	56	0
+1: andi      r17,r5,255		36	51	55	0
+2: sw        r16,16(r29)		42	55	0	0
+3: sw        r31,24(r29)		37	54	0	0
+
+
+FP RS
+
+
+INT FU
+0: andi      r17,r5,255		36	51	55	0
+Latency of fuINT[0]: 59
+1: sw        r17,20(r29)		34	50	56	0
+Latency of fuINT[1]: 60
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 57
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	56	0
+1: andi      r17,r5,255		36	51	55	0
+2: sw        r16,16(r29)		42	55	0	0
+3: sw        r31,24(r29)		37	54	0	0
+
+
+FP RS
+
+
+INT FU
+0: andi      r17,r5,255		36	51	55	0
+Latency of fuINT[0]: 59
+1: sw        r17,20(r29)		34	50	56	0
+Latency of fuINT[1]: 60
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 58
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: addu      r16,r0,r0
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	56	0
+1: andi      r17,r5,255		36	51	55	0
+2: sw        r16,16(r29)		42	55	0	0
+3: sw        r31,24(r29)		37	54	0	0
+
+
+FP RS
+
+
+INT FU
+0: andi      r17,r5,255		36	51	55	0
+Latency of fuINT[0]: 59
+1: sw        r17,20(r29)		34	50	56	0
+Latency of fuINT[1]: 60
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 59
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: addu      r5,r0,r17
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: sw        r17,20(r29)		34	50	56	0
+1: addu      r16,r0,r0		44	59	0	0
+2: sw        r16,16(r29)		42	55	0	0
+3: sw        r31,24(r29)		37	54	59	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,24(r29)		37	54	59	0
+Latency of fuINT[0]: 63
+1: sw        r17,20(r29)		34	50	56	0
+Latency of fuINT[1]: 60
+
+
+FP FU
+Broadcasting instruction:
+andi      r17,r5,255		36	51	55	59
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 60
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: jal       0x5fe910
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	0	0
+1: addu      r16,r0,r0		44	59	0	0
+2: sw        r16,16(r29)		42	55	60	0
+3: sw        r31,24(r29)		37	54	59	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,24(r29)		37	54	59	0
+Latency of fuINT[0]: 63
+1: sw        r16,16(r29)		42	55	60	0
+Latency of fuINT[1]: 64
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 61
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	0	0
+1: addu      r16,r0,r0		44	59	0	0
+2: sw        r16,16(r29)		42	55	60	0
+3: sw        r31,24(r29)		37	54	59	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,24(r29)		37	54	59	0
+Latency of fuINT[0]: 63
+1: sw        r16,16(r29)		42	55	60	0
+Latency of fuINT[1]: 64
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 62
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: addiu     r29,r29,-16
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	0	0
+1: addu      r16,r0,r0		44	59	0	0
+2: sw        r16,16(r29)		42	55	60	0
+3: sw        r31,24(r29)		37	54	59	0
+
+
+FP RS
+
+
+INT FU
+0: sw        r31,24(r29)		37	54	59	0
+Latency of fuINT[0]: 63
+1: sw        r16,16(r29)		42	55	60	0
+Latency of fuINT[1]: 64
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 63
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: andi      r5,r5,255
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	0	0
+1: addu      r16,r0,r0		44	59	63	0
+2: sw        r16,16(r29)		42	55	60	0
+3: addiu     r29,r29,-16		47	63	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r0		44	59	63	0
+Latency of fuINT[0]: 67
+1: sw        r16,16(r29)		42	55	60	0
+Latency of fuINT[1]: 64
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 64
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	64	0
+1: addu      r16,r0,r0		44	59	63	0
+2: andi      r5,r5,255		48	64	0	0
+Q[0]: addu      r5,r0,r17
+3: addiu     r29,r29,-16		47	63	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r0		44	59	63	0
+Latency of fuINT[0]: 67
+1: addu      r5,r0,r17		45	60	64	0
+Latency of fuINT[1]: 68
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 65
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	64	0
+1: addu      r16,r0,r0		44	59	63	0
+2: andi      r5,r5,255		48	64	0	0
+Q[0]: addu      r5,r0,r17
+3: addiu     r29,r29,-16		47	63	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r0		44	59	63	0
+Latency of fuINT[0]: 67
+1: addu      r5,r0,r17		45	60	64	0
+Latency of fuINT[1]: 68
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 66
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: andi      r2,r4,3
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	64	0
+1: addu      r16,r0,r0		44	59	63	0
+2: andi      r5,r5,255		48	64	0	0
+Q[0]: addu      r5,r0,r17
+3: addiu     r29,r29,-16		47	63	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r16,r0,r0		44	59	63	0
+Latency of fuINT[0]: 67
+1: addu      r5,r0,r17		45	60	64	0
+Latency of fuINT[1]: 68
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 67
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: beq       r2,r0,0x5fe960
+9: lui       r8,0x7efe
+
+
+INT RS
+0: addu      r5,r0,r17		45	60	64	0
+1: andi      r2,r4,3		50	67	0	0
+2: andi      r5,r5,255		48	64	0	0
+Q[0]: addu      r5,r0,r17
+3: addiu     r29,r29,-16		47	63	67	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,-16		47	63	67	0
+Latency of fuINT[0]: 71
+1: addu      r5,r0,r17		45	60	64	0
+Latency of fuINT[1]: 68
+
+
+FP FU
+Broadcasting instruction:
+addu      r16,r0,r0		44	59	63	67
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 68
+RS int available: 1, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: lui       r8,0x7efe
+
+
+INT RS
+1: andi      r2,r4,3		50	67	0	0
+2: andi      r5,r5,255		48	64	0	0
+3: addiu     r29,r29,-16		47	63	67	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,-16		47	63	67	0
+Latency of fuINT[0]: 71
+
+
+FP FU
+Broadcasting instruction:
+addu      r5,r0,r17		45	60	64	68
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 69
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	0	0
+1: andi      r2,r4,3		50	67	0	0
+2: andi      r5,r5,255		48	64	69	0
+3: addiu     r29,r29,-16		47	63	67	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,-16		47	63	67	0
+Latency of fuINT[0]: 71
+1: andi      r5,r5,255		48	64	69	0
+Latency of fuINT[1]: 73
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 70
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: ori       r8,r8,65279
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	0	0
+1: andi      r2,r4,3		50	67	0	0
+2: andi      r5,r5,255		48	64	69	0
+3: addiu     r29,r29,-16		47	63	67	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,-16		47	63	67	0
+Latency of fuINT[0]: 71
+1: andi      r5,r5,255		48	64	69	0
+Latency of fuINT[1]: 73
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 71
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	0	0
+1: andi      r2,r4,3		50	67	71	0
+2: andi      r5,r5,255		48	64	69	0
+3: ori       r8,r8,65279		55	71	0	0
+Q[0]: lui       r8,0x7efe
+
+
+FP RS
+
+
+INT FU
+0: andi      r2,r4,3		50	67	71	0
+Latency of fuINT[0]: 75
+1: andi      r5,r5,255		48	64	69	0
+Latency of fuINT[1]: 73
+
+
+FP FU
+Broadcasting instruction:
+addiu     r29,r29,-16		47	63	67	71
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 72
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: sll       r2,r5,8
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	0	0
+1: andi      r2,r4,3		50	67	71	0
+2: andi      r5,r5,255		48	64	69	0
+3: ori       r8,r8,65279		55	71	0	0
+Q[0]: lui       r8,0x7efe
+
+
+FP RS
+
+
+INT FU
+0: andi      r2,r4,3		50	67	71	0
+Latency of fuINT[0]: 75
+1: andi      r5,r5,255		48	64	69	0
+Latency of fuINT[1]: 73
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 73
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	73	0
+1: andi      r2,r4,3		50	67	71	0
+2: sll       r2,r5,8		56	73	0	0
+3: ori       r8,r8,65279		55	71	0	0
+Q[0]: lui       r8,0x7efe
+
+
+FP RS
+
+
+INT FU
+0: andi      r2,r4,3		50	67	71	0
+Latency of fuINT[0]: 75
+1: lui       r8,0x7efe		54	69	73	0
+Latency of fuINT[1]: 77
+
+
+FP FU
+Broadcasting instruction:
+andi      r5,r5,255		48	64	69	73
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 74
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: or        r9,r5,r2
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	73	0
+1: andi      r2,r4,3		50	67	71	0
+2: sll       r2,r5,8		56	73	0	0
+3: ori       r8,r8,65279		55	71	0	0
+Q[0]: lui       r8,0x7efe
+
+
+FP RS
+
+
+INT FU
+0: andi      r2,r4,3		50	67	71	0
+Latency of fuINT[0]: 75
+1: lui       r8,0x7efe		54	69	73	0
+Latency of fuINT[1]: 77
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 75
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	73	0
+1: or        r9,r5,r2		59	75	0	0
+Q[1]: sll       r2,r5,8
+2: sll       r2,r5,8		56	73	75	0
+3: ori       r8,r8,65279		55	71	0	0
+Q[0]: lui       r8,0x7efe
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r5,8		56	73	75	0
+Latency of fuINT[0]: 79
+1: lui       r8,0x7efe		54	69	73	0
+Latency of fuINT[1]: 77
+
+
+FP FU
+Broadcasting instruction:
+andi      r2,r4,3		50	67	71	75
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 76
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: sll       r2,r9,16
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: lui       r8,0x7efe		54	69	73	0
+1: or        r9,r5,r2		59	75	0	0
+Q[1]: sll       r2,r5,8
+2: sll       r2,r5,8		56	73	75	0
+3: ori       r8,r8,65279		55	71	0	0
+Q[0]: lui       r8,0x7efe
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r5,8		56	73	75	0
+Latency of fuINT[0]: 79
+1: lui       r8,0x7efe		54	69	73	0
+Latency of fuINT[1]: 77
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 77
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	0	0
+Q[1]: sll       r2,r5,8
+2: sll       r2,r5,8		56	73	75	0
+3: ori       r8,r8,65279		55	71	0	0
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r5,8		56	73	75	0
+Latency of fuINT[0]: 79
+
+
+FP FU
+Broadcasting instruction:
+lui       r8,0x7efe		54	69	73	77
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 78
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: or        r9,r9,r2
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	0	0
+Q[1]: sll       r2,r5,8
+2: sll       r2,r5,8		56	73	75	0
+3: ori       r8,r8,65279		55	71	78	0
+
+
+FP RS
+
+
+INT FU
+0: sll       r2,r5,8		56	73	75	0
+Latency of fuINT[0]: 79
+1: ori       r8,r8,65279		55	71	78	0
+Latency of fuINT[1]: 82
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 79
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	0	0
+2: or        r9,r9,r2		61	79	0	0
+Q[0]: or        r9,r5,r2
+Q[1]: sll       r2,r9,16
+3: ori       r8,r8,65279		55	71	78	0
+
+
+FP RS
+
+
+INT FU
+1: ori       r8,r8,65279		55	71	78	0
+Latency of fuINT[1]: 82
+
+
+FP FU
+Broadcasting instruction:
+sll       r2,r5,8		56	73	75	79
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 80
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	80	0
+2: or        r9,r9,r2		61	79	0	0
+Q[0]: or        r9,r5,r2
+Q[1]: sll       r2,r9,16
+3: ori       r8,r8,65279		55	71	78	0
+
+
+FP RS
+
+
+INT FU
+0: or        r9,r5,r2		59	75	80	0
+Latency of fuINT[0]: 84
+1: ori       r8,r8,65279		55	71	78	0
+Latency of fuINT[1]: 82
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 81
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: lw        r6,0(r4)
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	80	0
+2: or        r9,r9,r2		61	79	0	0
+Q[0]: or        r9,r5,r2
+Q[1]: sll       r2,r9,16
+3: ori       r8,r8,65279		55	71	78	0
+
+
+FP RS
+
+
+INT FU
+0: or        r9,r5,r2		59	75	80	0
+Latency of fuINT[0]: 84
+1: ori       r8,r8,65279		55	71	78	0
+Latency of fuINT[1]: 82
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 82
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	80	0
+2: or        r9,r9,r2		61	79	0	0
+Q[0]: or        r9,r5,r2
+Q[1]: sll       r2,r9,16
+3: lw        r6,0(r4)		63	82	0	0
+
+
+FP RS
+
+
+INT FU
+0: or        r9,r5,r2		59	75	80	0
+Latency of fuINT[0]: 84
+
+
+FP FU
+Broadcasting instruction:
+ori       r8,r8,65279		55	71	78	82
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 83
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: nor       r7,r0,r8
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+Q[0]: or        r9,r5,r2
+1: or        r9,r5,r2		59	75	80	0
+2: or        r9,r9,r2		61	79	0	0
+Q[0]: or        r9,r5,r2
+Q[1]: sll       r2,r9,16
+3: lw        r6,0(r4)		63	82	0	0
+
+
+FP RS
+
+
+INT FU
+0: or        r9,r5,r2		59	75	80	0
+Latency of fuINT[0]: 84
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 84
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	0	0
+1: nor       r7,r0,r8		64	84	0	0
+2: or        r9,r9,r2		61	79	0	0
+Q[1]: sll       r2,r9,16
+3: lw        r6,0(r4)		63	82	84	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		63	82	84	0
+Latency of fuINT[0]: 88
+
+
+FP FU
+Broadcasting instruction:
+or        r9,r5,r2		59	75	80	84
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 85
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	85	0
+1: nor       r7,r0,r8		64	84	0	0
+2: or        r9,r9,r2		61	79	0	0
+Q[1]: sll       r2,r9,16
+3: lw        r6,0(r4)		63	82	84	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		63	82	84	0
+Latency of fuINT[0]: 88
+1: sll       r2,r9,16		60	77	85	0
+Latency of fuINT[1]: 89
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 86
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	85	0
+1: nor       r7,r0,r8		64	84	0	0
+2: or        r9,r9,r2		61	79	0	0
+Q[1]: sll       r2,r9,16
+3: lw        r6,0(r4)		63	82	84	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		63	82	84	0
+Latency of fuINT[0]: 88
+1: sll       r2,r9,16		60	77	85	0
+Latency of fuINT[1]: 89
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 87
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: addiu     r4,r4,4
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	85	0
+1: nor       r7,r0,r8		64	84	0	0
+2: or        r9,r9,r2		61	79	0	0
+Q[1]: sll       r2,r9,16
+3: lw        r6,0(r4)		63	82	84	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		63	82	84	0
+Latency of fuINT[0]: 88
+1: sll       r2,r9,16		60	77	85	0
+Latency of fuINT[1]: 89
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 88
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: addu      r3,r6,r8
+9: nor       r2,r0,r6
+
+
+INT RS
+0: sll       r2,r9,16		60	77	85	0
+1: nor       r7,r0,r8		64	84	88	0
+2: or        r9,r9,r2		61	79	0	0
+Q[1]: sll       r2,r9,16
+3: addiu     r4,r4,4		67	88	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		64	84	88	0
+Latency of fuINT[0]: 92
+1: sll       r2,r9,16		60	77	85	0
+Latency of fuINT[1]: 89
+
+
+FP FU
+Broadcasting instruction:
+lw        r6,0(r4)		63	82	84	88
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 89
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: nor       r2,r0,r6
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	0	0
+1: nor       r7,r0,r8		64	84	88	0
+2: or        r9,r9,r2		61	79	0	0
+3: addiu     r4,r4,4		67	88	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		64	84	88	0
+Latency of fuINT[0]: 92
+
+
+FP FU
+Broadcasting instruction:
+sll       r2,r9,16		60	77	85	89
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 90
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: nor       r2,r0,r6
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	0	0
+1: nor       r7,r0,r8		64	84	88	0
+2: or        r9,r9,r2		61	79	90	0
+3: addiu     r4,r4,4		67	88	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		64	84	88	0
+Latency of fuINT[0]: 92
+1: or        r9,r9,r2		61	79	90	0
+Latency of fuINT[1]: 94
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 91
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: nor       r2,r0,r6
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	0	0
+1: nor       r7,r0,r8		64	84	88	0
+2: or        r9,r9,r2		61	79	90	0
+3: addiu     r4,r4,4		67	88	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		64	84	88	0
+Latency of fuINT[0]: 92
+1: or        r9,r9,r2		61	79	90	0
+Latency of fuINT[1]: 94
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 92
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	0	0
+1: nor       r2,r0,r6		69	92	0	0
+2: or        r9,r9,r2		61	79	90	0
+3: addiu     r4,r4,4		67	88	92	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		67	88	92	0
+Latency of fuINT[0]: 96
+1: or        r9,r9,r2		61	79	90	0
+Latency of fuINT[1]: 94
+
+
+FP FU
+Broadcasting instruction:
+nor       r7,r0,r8		64	84	88	92
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 93
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	0	0
+1: nor       r2,r0,r6		69	92	0	0
+2: or        r9,r9,r2		61	79	90	0
+3: addiu     r4,r4,4		67	88	92	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		67	88	92	0
+Latency of fuINT[0]: 96
+1: or        r9,r9,r2		61	79	90	0
+Latency of fuINT[1]: 94
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 94
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	94	0
+1: nor       r2,r0,r6		69	92	0	0
+2: xor       r3,r3,r2		71	94	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+3: addiu     r4,r4,4		67	88	92	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		67	88	92	0
+Latency of fuINT[0]: 96
+1: addu      r3,r6,r8		68	89	94	0
+Latency of fuINT[1]: 98
+
+
+FP FU
+Broadcasting instruction:
+or        r9,r9,r2		61	79	90	94
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 95
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: and       r3,r3,r7
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	94	0
+1: nor       r2,r0,r6		69	92	0	0
+2: xor       r3,r3,r2		71	94	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+3: addiu     r4,r4,4		67	88	92	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		67	88	92	0
+Latency of fuINT[0]: 96
+1: addu      r3,r6,r8		68	89	94	0
+Latency of fuINT[1]: 98
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 96
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: bne       r3,r0,0x5fea00
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	94	0
+1: nor       r2,r0,r6		69	92	96	0
+2: xor       r3,r3,r2		71	94	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		69	92	96	0
+Latency of fuINT[0]: 100
+1: addu      r3,r6,r8		68	89	94	0
+Latency of fuINT[1]: 98
+
+
+FP FU
+Broadcasting instruction:
+addiu     r4,r4,4		67	88	92	96
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 97
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: xor       r2,r6,r9
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: addu      r3,r6,r8		68	89	94	0
+1: nor       r2,r0,r6		69	92	96	0
+2: xor       r3,r3,r2		71	94	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		69	92	96	0
+Latency of fuINT[0]: 100
+1: addu      r3,r6,r8		68	89	94	0
+Latency of fuINT[1]: 98
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 98
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: xor       r2,r6,r9		77	98	0	0
+1: nor       r2,r0,r6		69	92	96	0
+2: xor       r3,r3,r2		71	94	0	0
+Q[1]: nor       r2,r0,r6
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		69	92	96	0
+Latency of fuINT[0]: 100
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r6,r8		68	89	94	98
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 99
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: addu      r3,r2,r8
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: xor       r2,r6,r9		77	98	0	0
+1: nor       r2,r0,r6		69	92	96	0
+2: xor       r3,r3,r2		71	94	0	0
+Q[1]: nor       r2,r0,r6
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		69	92	96	0
+Latency of fuINT[0]: 100
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 100
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: xor       r2,r6,r9		77	98	100	0
+1: addu      r3,r2,r8		79	100	0	0
+Q[0]: xor       r2,r6,r9
+2: xor       r3,r3,r2		71	94	0	0
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		77	98	100	0
+Latency of fuINT[0]: 104
+
+
+FP FU
+Broadcasting instruction:
+nor       r2,r0,r6		69	92	96	100
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 101
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: xor       r2,r6,r9		77	98	100	0
+1: addu      r3,r2,r8		79	100	0	0
+Q[0]: xor       r2,r6,r9
+2: xor       r3,r3,r2		71	94	101	0
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		77	98	100	0
+Latency of fuINT[0]: 104
+1: xor       r3,r3,r2		71	94	101	0
+Latency of fuINT[1]: 105
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 102
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: xor       r2,r6,r9		77	98	100	0
+1: addu      r3,r2,r8		79	100	0	0
+Q[0]: xor       r2,r6,r9
+2: xor       r3,r3,r2		71	94	101	0
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		77	98	100	0
+Latency of fuINT[0]: 104
+1: xor       r3,r3,r2		71	94	101	0
+Latency of fuINT[1]: 105
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 103
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: nor       r2,r0,r2
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: xor       r2,r6,r9		77	98	100	0
+1: addu      r3,r2,r8		79	100	0	0
+Q[0]: xor       r2,r6,r9
+2: xor       r3,r3,r2		71	94	101	0
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		77	98	100	0
+Latency of fuINT[0]: 104
+1: xor       r3,r3,r2		71	94	101	0
+Latency of fuINT[1]: 105
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 104
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: xor       r3,r3,r2
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	0	0
+1: addu      r3,r2,r8		79	100	0	0
+2: xor       r3,r3,r2		71	94	101	0
+3: and       r3,r3,r7		73	96	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+1: xor       r3,r3,r2		71	94	101	0
+Latency of fuINT[1]: 105
+
+
+FP FU
+Broadcasting instruction:
+xor       r2,r6,r9		77	98	100	104
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 105
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	0	0
+1: addu      r3,r2,r8		79	100	105	0
+2: xor       r3,r3,r2		84	105	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+3: and       r3,r3,r7		73	96	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		79	100	105	0
+Latency of fuINT[0]: 109
+
+
+FP FU
+Broadcasting instruction:
+xor       r3,r3,r2		71	94	101	105
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 106
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	0	0
+1: addu      r3,r2,r8		79	100	105	0
+2: xor       r3,r3,r2		84	105	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+3: and       r3,r3,r7		73	96	106	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		79	100	105	0
+Latency of fuINT[0]: 109
+1: and       r3,r3,r7		73	96	106	0
+Latency of fuINT[1]: 110
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 107
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	0	0
+1: addu      r3,r2,r8		79	100	105	0
+2: xor       r3,r3,r2		84	105	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+3: and       r3,r3,r7		73	96	106	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		79	100	105	0
+Latency of fuINT[0]: 109
+1: and       r3,r3,r7		73	96	106	0
+Latency of fuINT[1]: 110
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 108
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: and       r3,r3,r7
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	0	0
+1: addu      r3,r2,r8		79	100	105	0
+2: xor       r3,r3,r2		84	105	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+3: and       r3,r3,r7		73	96	106	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		79	100	105	0
+Latency of fuINT[0]: 109
+1: and       r3,r3,r7		73	96	106	0
+Latency of fuINT[1]: 110
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 109
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: beq       r3,r0,0x5fe990
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	109	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	0	0
+Q[1]: nor       r2,r0,r2
+3: and       r3,r3,r7		73	96	106	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		82	104	109	0
+Latency of fuINT[0]: 113
+1: and       r3,r3,r7		73	96	106	0
+Latency of fuINT[1]: 110
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r2,r8		79	100	105	109
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 110
+RS int available: 1, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: lw        r6,0(r4)
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	109	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	0	0
+Q[1]: nor       r2,r0,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		82	104	109	0
+Latency of fuINT[0]: 113
+
+
+FP FU
+Broadcasting instruction:
+and       r3,r3,r7		73	96	106	110
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 111
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	109	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	0	0
+Q[1]: nor       r2,r0,r2
+3: lw        r6,0(r4)		92	111	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		82	104	109	0
+Latency of fuINT[0]: 113
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 112
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: nor       r7,r0,r8
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r2		82	104	109	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	0	0
+Q[1]: nor       r2,r0,r2
+3: lw        r6,0(r4)		92	111	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		82	104	109	0
+Latency of fuINT[0]: 113
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 113
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	0	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	0	0
+3: lw        r6,0(r4)		92	111	113	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		92	111	113	0
+Latency of fuINT[0]: 117
+
+
+FP FU
+Broadcasting instruction:
+nor       r2,r0,r2		82	104	109	113
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 114
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	0	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	114	0
+3: lw        r6,0(r4)		92	111	113	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		92	111	113	0
+Latency of fuINT[0]: 117
+1: xor       r3,r3,r2		84	105	114	0
+Latency of fuINT[1]: 118
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 115
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	0	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	114	0
+3: lw        r6,0(r4)		92	111	113	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		92	111	113	0
+Latency of fuINT[0]: 117
+1: xor       r3,r3,r2		84	105	114	0
+Latency of fuINT[1]: 118
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 116
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: addiu     r4,r4,4
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	0	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	114	0
+3: lw        r6,0(r4)		92	111	113	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		92	111	113	0
+Latency of fuINT[0]: 117
+1: xor       r3,r3,r2		84	105	114	0
+Latency of fuINT[1]: 118
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 117
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: addu      r3,r6,r8
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	117	0
+1: and       r3,r3,r7		88	109	0	0
+Q[0]: xor       r3,r3,r2
+2: xor       r3,r3,r2		84	105	114	0
+3: addiu     r4,r4,4		96	117	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		94	113	117	0
+Latency of fuINT[0]: 121
+1: xor       r3,r3,r2		84	105	114	0
+Latency of fuINT[1]: 118
+
+
+FP FU
+Broadcasting instruction:
+lw        r6,0(r4)		92	111	113	117
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 118
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	117	0
+1: and       r3,r3,r7		88	109	0	0
+2: addu      r3,r6,r8		97	118	0	0
+3: addiu     r4,r4,4		96	117	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		94	113	117	0
+Latency of fuINT[0]: 121
+
+
+FP FU
+Broadcasting instruction:
+xor       r3,r3,r2		84	105	114	118
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 119
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	117	0
+1: and       r3,r3,r7		88	109	119	0
+2: addu      r3,r6,r8		97	118	0	0
+3: addiu     r4,r4,4		96	117	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		94	113	117	0
+Latency of fuINT[0]: 121
+1: and       r3,r3,r7		88	109	119	0
+Latency of fuINT[1]: 123
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 120
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: nor       r2,r0,r6
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r7,r0,r8		94	113	117	0
+1: and       r3,r3,r7		88	109	119	0
+2: addu      r3,r6,r8		97	118	0	0
+3: addiu     r4,r4,4		96	117	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		94	113	117	0
+Latency of fuINT[0]: 121
+1: and       r3,r3,r7		88	109	119	0
+Latency of fuINT[1]: 123
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 121
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	0	0
+1: and       r3,r3,r7		88	109	119	0
+2: addu      r3,r6,r8		97	118	0	0
+3: addiu     r4,r4,4		96	117	121	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		96	117	121	0
+Latency of fuINT[0]: 125
+1: and       r3,r3,r7		88	109	119	0
+Latency of fuINT[1]: 123
+
+
+FP FU
+Broadcasting instruction:
+nor       r7,r0,r8		94	113	117	121
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 122
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	0	0
+1: and       r3,r3,r7		88	109	119	0
+2: addu      r3,r6,r8		97	118	0	0
+3: addiu     r4,r4,4		96	117	121	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		96	117	121	0
+Latency of fuINT[0]: 125
+1: and       r3,r3,r7		88	109	119	0
+Latency of fuINT[1]: 123
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 123
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	0	0
+1: xor       r3,r3,r2		100	123	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+2: addu      r3,r6,r8		97	118	123	0
+3: addiu     r4,r4,4		96	117	121	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		96	117	121	0
+Latency of fuINT[0]: 125
+1: addu      r3,r6,r8		97	118	123	0
+Latency of fuINT[1]: 127
+
+
+FP FU
+Broadcasting instruction:
+and       r3,r3,r7		88	109	119	123
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 124
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: and       r3,r3,r7
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	0	0
+1: xor       r3,r3,r2		100	123	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+2: addu      r3,r6,r8		97	118	123	0
+3: addiu     r4,r4,4		96	117	121	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		96	117	121	0
+Latency of fuINT[0]: 125
+1: addu      r3,r6,r8		97	118	123	0
+Latency of fuINT[1]: 127
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 125
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: bne       r3,r0,0x5fea00
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	125	0
+1: xor       r3,r3,r2		100	123	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+2: addu      r3,r6,r8		97	118	123	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		98	121	125	0
+Latency of fuINT[0]: 129
+1: addu      r3,r6,r8		97	118	123	0
+Latency of fuINT[1]: 127
+
+
+FP FU
+Broadcasting instruction:
+addiu     r4,r4,4		96	117	121	125
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 126
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: xor       r2,r6,r9
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	125	0
+1: xor       r3,r3,r2		100	123	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+2: addu      r3,r6,r8		97	118	123	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		98	121	125	0
+Latency of fuINT[0]: 129
+1: addu      r3,r6,r8		97	118	123	0
+Latency of fuINT[1]: 127
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 127
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	125	0
+1: xor       r3,r3,r2		100	123	0	0
+Q[1]: nor       r2,r0,r6
+2: xor       r2,r6,r9		109	127	0	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		98	121	125	0
+Latency of fuINT[0]: 129
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r6,r8		97	118	123	127
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 128
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: addu      r3,r2,r8
+9: nor       r2,r0,r2
+
+
+INT RS
+0: nor       r2,r0,r6		98	121	125	0
+1: xor       r3,r3,r2		100	123	0	0
+Q[1]: nor       r2,r0,r6
+2: xor       r2,r6,r9		109	127	0	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		98	121	125	0
+Latency of fuINT[0]: 129
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 129
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: nor       r2,r0,r2
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	0	0
+Q[0]: xor       r2,r6,r9
+1: xor       r3,r3,r2		100	123	0	0
+2: xor       r2,r6,r9		109	127	129	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		109	127	129	0
+Latency of fuINT[0]: 133
+
+
+FP FU
+Broadcasting instruction:
+nor       r2,r0,r6		98	121	125	129
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 130
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: nor       r2,r0,r2
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	0	0
+Q[0]: xor       r2,r6,r9
+1: xor       r3,r3,r2		100	123	130	0
+2: xor       r2,r6,r9		109	127	129	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		109	127	129	0
+Latency of fuINT[0]: 133
+1: xor       r3,r3,r2		100	123	130	0
+Latency of fuINT[1]: 134
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 131
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: nor       r2,r0,r2
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	0	0
+Q[0]: xor       r2,r6,r9
+1: xor       r3,r3,r2		100	123	130	0
+2: xor       r2,r6,r9		109	127	129	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		109	127	129	0
+Latency of fuINT[0]: 133
+1: xor       r3,r3,r2		100	123	130	0
+Latency of fuINT[1]: 134
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 132
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: nor       r2,r0,r2
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	0	0
+Q[0]: xor       r2,r6,r9
+1: xor       r3,r3,r2		100	123	130	0
+2: xor       r2,r6,r9		109	127	129	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		109	127	129	0
+Latency of fuINT[0]: 133
+1: xor       r3,r3,r2		100	123	130	0
+Latency of fuINT[1]: 134
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 133
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: xor       r3,r3,r2
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	0	0
+1: xor       r3,r3,r2		100	123	130	0
+2: nor       r2,r0,r2		111	133	0	0
+3: and       r3,r3,r7		104	125	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+1: xor       r3,r3,r2		100	123	130	0
+Latency of fuINT[1]: 134
+
+
+FP FU
+Broadcasting instruction:
+xor       r2,r6,r9		109	127	129	133
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 134
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	134	0
+1: xor       r3,r3,r2		113	134	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	0	0
+3: and       r3,r3,r7		104	125	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		110	129	134	0
+Latency of fuINT[0]: 138
+
+
+FP FU
+Broadcasting instruction:
+xor       r3,r3,r2		100	123	130	134
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 135
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	134	0
+1: xor       r3,r3,r2		113	134	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	0	0
+3: and       r3,r3,r7		104	125	135	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		110	129	134	0
+Latency of fuINT[0]: 138
+1: and       r3,r3,r7		104	125	135	0
+Latency of fuINT[1]: 139
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 136
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	134	0
+1: xor       r3,r3,r2		113	134	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	0	0
+3: and       r3,r3,r7		104	125	135	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		110	129	134	0
+Latency of fuINT[0]: 138
+1: and       r3,r3,r7		104	125	135	0
+Latency of fuINT[1]: 139
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 137
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: and       r3,r3,r7
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: addu      r3,r2,r8		110	129	134	0
+1: xor       r3,r3,r2		113	134	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	0	0
+3: and       r3,r3,r7		104	125	135	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		110	129	134	0
+Latency of fuINT[0]: 138
+1: and       r3,r3,r7		104	125	135	0
+Latency of fuINT[1]: 139
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 138
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: beq       r3,r0,0x5fe990
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	0	0
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	138	0
+3: and       r3,r3,r7		104	125	135	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		111	133	138	0
+Latency of fuINT[0]: 142
+1: and       r3,r3,r7		104	125	135	0
+Latency of fuINT[1]: 139
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r2,r8		110	129	134	138
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 139
+RS int available: 1, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: lw        r6,0(r4)
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	0	0
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	138	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		111	133	138	0
+Latency of fuINT[0]: 142
+
+
+FP FU
+Broadcasting instruction:
+and       r3,r3,r7		104	125	135	139
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 140
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	0	0
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	138	0
+3: lw        r6,0(r4)		121	140	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		111	133	138	0
+Latency of fuINT[0]: 142
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 141
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: nor       r7,r0,r8
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	0	0
+Q[1]: nor       r2,r0,r2
+2: nor       r2,r0,r2		111	133	138	0
+3: lw        r6,0(r4)		121	140	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		111	133	138	0
+Latency of fuINT[0]: 142
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 142
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	0	0
+2: nor       r7,r0,r8		123	142	0	0
+3: lw        r6,0(r4)		121	140	142	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		121	140	142	0
+Latency of fuINT[0]: 146
+
+
+FP FU
+Broadcasting instruction:
+nor       r2,r0,r2		111	133	138	142
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 143
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	143	0
+2: nor       r7,r0,r8		123	142	0	0
+3: lw        r6,0(r4)		121	140	142	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		121	140	142	0
+Latency of fuINT[0]: 146
+1: xor       r3,r3,r2		113	134	143	0
+Latency of fuINT[1]: 147
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 144
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	143	0
+2: nor       r7,r0,r8		123	142	0	0
+3: lw        r6,0(r4)		121	140	142	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		121	140	142	0
+Latency of fuINT[0]: 146
+1: xor       r3,r3,r2		113	134	143	0
+Latency of fuINT[1]: 147
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 145
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: addiu     r4,r4,4
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	143	0
+2: nor       r7,r0,r8		123	142	0	0
+3: lw        r6,0(r4)		121	140	142	0
+
+
+FP RS
+
+
+INT FU
+0: lw        r6,0(r4)		121	140	142	0
+Latency of fuINT[0]: 146
+1: xor       r3,r3,r2		113	134	143	0
+Latency of fuINT[1]: 147
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 146
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: addu      r3,r6,r8
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+Q[0]: xor       r3,r3,r2
+1: xor       r3,r3,r2		113	134	143	0
+2: nor       r7,r0,r8		123	142	146	0
+3: addiu     r4,r4,4		125	146	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		123	142	146	0
+Latency of fuINT[0]: 150
+1: xor       r3,r3,r2		113	134	143	0
+Latency of fuINT[1]: 147
+
+
+FP FU
+Broadcasting instruction:
+lw        r6,0(r4)		121	140	142	146
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 147
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	0	0
+1: addu      r3,r6,r8		126	147	0	0
+2: nor       r7,r0,r8		123	142	146	0
+3: addiu     r4,r4,4		125	146	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		123	142	146	0
+Latency of fuINT[0]: 150
+
+
+FP FU
+Broadcasting instruction:
+xor       r3,r3,r2		113	134	143	147
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 148
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	148	0
+1: addu      r3,r6,r8		126	147	0	0
+2: nor       r7,r0,r8		123	142	146	0
+3: addiu     r4,r4,4		125	146	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		123	142	146	0
+Latency of fuINT[0]: 150
+1: and       r3,r3,r7		117	138	148	0
+Latency of fuINT[1]: 152
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 149
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: nor       r2,r0,r6
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	148	0
+1: addu      r3,r6,r8		126	147	0	0
+2: nor       r7,r0,r8		123	142	146	0
+3: addiu     r4,r4,4		125	146	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r7,r0,r8		123	142	146	0
+Latency of fuINT[0]: 150
+1: and       r3,r3,r7		117	138	148	0
+Latency of fuINT[1]: 152
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 150
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	148	0
+1: addu      r3,r6,r8		126	147	0	0
+2: nor       r2,r0,r6		127	150	0	0
+3: addiu     r4,r4,4		125	146	150	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		125	146	150	0
+Latency of fuINT[0]: 154
+1: and       r3,r3,r7		117	138	148	0
+Latency of fuINT[1]: 152
+
+
+FP FU
+Broadcasting instruction:
+nor       r7,r0,r8		123	142	146	150
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 151
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: xor       r3,r3,r2
+9: and       r3,r3,r7
+
+
+INT RS
+0: and       r3,r3,r7		117	138	148	0
+1: addu      r3,r6,r8		126	147	0	0
+2: nor       r2,r0,r6		127	150	0	0
+3: addiu     r4,r4,4		125	146	150	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		125	146	150	0
+Latency of fuINT[0]: 154
+1: and       r3,r3,r7		117	138	148	0
+Latency of fuINT[1]: 152
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 152
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: and       r3,r3,r7
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+1: addu      r3,r6,r8		126	147	152	0
+2: nor       r2,r0,r6		127	150	0	0
+3: addiu     r4,r4,4		125	146	150	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		125	146	150	0
+Latency of fuINT[0]: 154
+1: addu      r3,r6,r8		126	147	152	0
+Latency of fuINT[1]: 156
+
+
+FP FU
+Broadcasting instruction:
+and       r3,r3,r7		117	138	148	152
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 153
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: and       r3,r3,r7
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+1: addu      r3,r6,r8		126	147	152	0
+2: nor       r2,r0,r6		127	150	0	0
+3: addiu     r4,r4,4		125	146	150	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r4,r4,4		125	146	150	0
+Latency of fuINT[0]: 154
+1: addu      r3,r6,r8		126	147	152	0
+Latency of fuINT[1]: 156
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 154
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: bne       r3,r0,0x5fea00
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+1: addu      r3,r6,r8		126	147	152	0
+2: nor       r2,r0,r6		127	150	154	0
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		127	150	154	0
+Latency of fuINT[0]: 158
+1: addu      r3,r6,r8		126	147	152	0
+Latency of fuINT[1]: 156
+
+
+FP FU
+Broadcasting instruction:
+addiu     r4,r4,4		125	146	150	154
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 155
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 1
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: xor       r2,r6,r9
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+Q[0]: addu      r3,r6,r8
+Q[1]: nor       r2,r0,r6
+1: addu      r3,r6,r8		126	147	152	0
+2: nor       r2,r0,r6		127	150	154	0
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		127	150	154	0
+Latency of fuINT[0]: 158
+1: addu      r3,r6,r8		126	147	152	0
+Latency of fuINT[1]: 156
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 156
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+Q[1]: nor       r2,r0,r6
+1: xor       r2,r6,r9		138	156	0	0
+2: nor       r2,r0,r6		127	150	154	0
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		127	150	154	0
+Latency of fuINT[0]: 158
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r6,r8		126	147	152	156
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 157
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 2
+Tail: 2
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addu      r3,r2,r8
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+Q[1]: nor       r2,r0,r6
+1: xor       r2,r6,r9		138	156	0	0
+2: nor       r2,r0,r6		127	150	154	0
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r6		127	150	154	0
+Latency of fuINT[0]: 158
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 158
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	0	0
+1: xor       r2,r6,r9		138	156	158	0
+2: addu      r3,r2,r8		139	158	0	0
+Q[0]: xor       r2,r6,r9
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		138	156	158	0
+Latency of fuINT[0]: 162
+
+
+FP FU
+Broadcasting instruction:
+nor       r2,r0,r6		127	150	154	158
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 159
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	159	0
+1: xor       r2,r6,r9		138	156	158	0
+2: addu      r3,r2,r8		139	158	0	0
+Q[0]: xor       r2,r6,r9
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		138	156	158	0
+Latency of fuINT[0]: 162
+1: xor       r3,r3,r2		129	152	159	0
+Latency of fuINT[1]: 163
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 160
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	159	0
+1: xor       r2,r6,r9		138	156	158	0
+2: addu      r3,r2,r8		139	158	0	0
+Q[0]: xor       r2,r6,r9
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		138	156	158	0
+Latency of fuINT[0]: 162
+1: xor       r3,r3,r2		129	152	159	0
+Latency of fuINT[1]: 163
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 161
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 3
+Tail: 3
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: nor       r2,r0,r2
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	159	0
+1: xor       r2,r6,r9		138	156	158	0
+2: addu      r3,r2,r8		139	158	0	0
+Q[0]: xor       r2,r6,r9
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: xor       r2,r6,r9		138	156	158	0
+Latency of fuINT[0]: 162
+1: xor       r3,r3,r2		129	152	159	0
+Latency of fuINT[1]: 163
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 162
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 4
+Tail: 4
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: xor       r3,r3,r2
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		129	152	159	0
+1: nor       r2,r0,r2		140	162	0	0
+2: addu      r3,r2,r8		139	158	0	0
+3: and       r3,r3,r7		133	154	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+1: xor       r3,r3,r2		129	152	159	0
+Latency of fuINT[1]: 163
+
+
+FP FU
+Broadcasting instruction:
+xor       r2,r6,r9		138	156	158	162
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 163
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	0	0
+2: addu      r3,r2,r8		139	158	163	0
+3: and       r3,r3,r7		133	154	0	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		139	158	163	0
+Latency of fuINT[0]: 167
+
+
+FP FU
+Broadcasting instruction:
+xor       r3,r3,r2		129	152	159	163
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 164
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	0	0
+2: addu      r3,r2,r8		139	158	163	0
+3: and       r3,r3,r7		133	154	164	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		139	158	163	0
+Latency of fuINT[0]: 167
+1: and       r3,r3,r7		133	154	164	0
+Latency of fuINT[1]: 168
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 165
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	0	0
+2: addu      r3,r2,r8		139	158	163	0
+3: and       r3,r3,r7		133	154	164	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		139	158	163	0
+Latency of fuINT[0]: 167
+1: and       r3,r3,r7		133	154	164	0
+Latency of fuINT[1]: 168
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 166
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 5
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: and       r3,r3,r7
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[0]: addu      r3,r2,r8
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	0	0
+2: addu      r3,r2,r8		139	158	163	0
+3: and       r3,r3,r7		133	154	164	0
+
+
+FP RS
+
+
+INT FU
+0: addu      r3,r2,r8		139	158	163	0
+Latency of fuINT[0]: 167
+1: and       r3,r3,r7		133	154	164	0
+Latency of fuINT[1]: 168
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 167
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 6
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: beq       r3,r0,0x5fe990
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	167	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: and       r3,r3,r7		133	154	164	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		140	162	167	0
+Latency of fuINT[0]: 171
+1: and       r3,r3,r7		133	154	164	0
+Latency of fuINT[1]: 168
+
+
+FP FU
+Broadcasting instruction:
+addu      r3,r2,r8		139	158	163	167
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 168
+RS int available: 1, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 7
+Tail: 7
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: lbu       r3,-4(r4)
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	167	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		140	162	167	0
+Latency of fuINT[0]: 171
+
+
+FP FU
+Broadcasting instruction:
+and       r3,r3,r7		133	154	164	168
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 169
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	167	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-4(r4)		150	169	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		140	162	167	0
+Latency of fuINT[0]: 171
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 170
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 8
+Tail: 8
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r2,r4,-4
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+Q[1]: nor       r2,r0,r2
+1: nor       r2,r0,r2		140	162	167	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-4(r4)		150	169	0	0
+
+
+FP RS
+
+
+INT FU
+0: nor       r2,r0,r2		140	162	167	0
+Latency of fuINT[0]: 171
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 171
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 9
+Tail: 9
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: beq       r3,r5,0x5feaa0
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	0	0
+1: addiu     r2,r4,-4		152	171	0	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-4(r4)		150	169	171	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-4(r4)		150	169	171	0
+Latency of fuINT[0]: 175
+
+
+FP FU
+Broadcasting instruction:
+nor       r2,r0,r2		140	162	167	171
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 172
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 10
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	172	0
+1: addiu     r2,r4,-4		152	171	0	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-4(r4)		150	169	171	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-4(r4)		150	169	171	0
+Latency of fuINT[0]: 175
+1: xor       r3,r3,r2		142	163	172	0
+Latency of fuINT[1]: 176
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 173
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 0
+Insn Queue Size: 9
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	172	0
+1: addiu     r2,r4,-4		152	171	0	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-4(r4)		150	169	171	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-4(r4)		150	169	171	0
+Latency of fuINT[0]: 175
+1: xor       r3,r3,r2		142	163	172	0
+Latency of fuINT[1]: 176
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 174
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 1
+Tail: 0
+Insn Queue Size: 9
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	172	0
+1: addiu     r2,r4,-4		152	171	0	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-4(r4)		150	169	171	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-4(r4)		150	169	171	0
+Latency of fuINT[0]: 175
+1: xor       r3,r3,r2		142	163	172	0
+Latency of fuINT[1]: 176
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 175
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 2
+Tail: 0
+Insn Queue Size: 8
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: xor       r3,r3,r2		142	163	172	0
+1: addiu     r2,r4,-4		152	171	175	0
+2: and       r3,r3,r7		146	167	0	0
+Q[0]: xor       r3,r3,r2
+3: lbu       r3,-3(r4)		156	175	0	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r2,r4,-4		152	171	175	0
+Latency of fuINT[0]: 179
+1: xor       r3,r3,r2		142	163	172	0
+Latency of fuINT[1]: 176
+
+
+FP FU
+Broadcasting instruction:
+lbu       r3,-4(r4)		150	169	171	175
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 176
+RS int available: 0, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 3
+Tail: 0
+Insn Queue Size: 7
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	0	0
+1: addiu     r2,r4,-4		152	171	175	0
+2: and       r3,r3,r7		146	167	0	0
+3: lbu       r3,-3(r4)		156	175	0	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r2,r4,-4		152	171	175	0
+Latency of fuINT[0]: 179
+
+
+FP FU
+Broadcasting instruction:
+xor       r3,r3,r2		142	163	172	176
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 177
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 4
+Tail: 0
+Insn Queue Size: 6
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	0	0
+1: addiu     r2,r4,-4		152	171	175	0
+2: and       r3,r3,r7		146	167	177	0
+3: lbu       r3,-3(r4)		156	175	0	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r2,r4,-4		152	171	175	0
+Latency of fuINT[0]: 179
+1: and       r3,r3,r7		146	167	177	0
+Latency of fuINT[1]: 181
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 178
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 5
+Tail: 0
+Insn Queue Size: 5
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	0	0
+1: addiu     r2,r4,-4		152	171	175	0
+2: and       r3,r3,r7		146	167	177	0
+3: lbu       r3,-3(r4)		156	175	0	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r2,r4,-4		152	171	175	0
+Latency of fuINT[0]: 179
+1: and       r3,r3,r7		146	167	177	0
+Latency of fuINT[1]: 181
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 179
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 0
+Insn Queue Size: 4
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	0	0
+1: lbu       r3,-2(r4)		167	179	0	0
+2: and       r3,r3,r7		146	167	177	0
+3: lbu       r3,-3(r4)		156	175	179	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-3(r4)		156	175	179	0
+Latency of fuINT[0]: 183
+1: and       r3,r3,r7		146	167	177	0
+Latency of fuINT[1]: 181
+
+
+FP FU
+Broadcasting instruction:
+addiu     r2,r4,-4		152	171	175	179
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 180
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 6
+Tail: 0
+Insn Queue Size: 4
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	0	0
+1: lbu       r3,-2(r4)		167	179	0	0
+2: and       r3,r3,r7		146	167	177	0
+3: lbu       r3,-3(r4)		156	175	179	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-3(r4)		156	175	179	0
+Latency of fuINT[0]: 183
+1: and       r3,r3,r7		146	167	177	0
+Latency of fuINT[1]: 181
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 181
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 7
+Tail: 0
+Insn Queue Size: 3
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	181	0
+1: lbu       r3,-2(r4)		167	179	0	0
+2: addiu     r2,r4,-2		168	181	0	0
+3: lbu       r3,-3(r4)		156	175	179	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-3(r4)		156	175	179	0
+Latency of fuINT[0]: 183
+1: addiu     r2,r4,-3		158	176	181	0
+Latency of fuINT[1]: 185
+
+
+FP FU
+Broadcasting instruction:
+and       r3,r3,r7		146	167	177	181
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 182
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 8
+Tail: 0
+Insn Queue Size: 2
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	181	0
+1: lbu       r3,-2(r4)		167	179	0	0
+2: addiu     r2,r4,-2		168	181	0	0
+3: lbu       r3,-3(r4)		156	175	179	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-3(r4)		156	175	179	0
+Latency of fuINT[0]: 183
+1: addiu     r2,r4,-3		158	176	181	0
+Latency of fuINT[1]: 185
+
+
+FP FU
+1 0 0 1 0 1 1
+---------------------------------------
+Cycle: 183
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 9
+Tail: 0
+Insn Queue Size: 1
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	181	0
+1: lbu       r3,-2(r4)		167	179	183	0
+2: addiu     r2,r4,-2		168	181	0	0
+3: addiu     r29,r29,16		171	183	0	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-2(r4)		167	179	183	0
+Latency of fuINT[0]: 187
+1: addiu     r2,r4,-3		158	176	181	0
+Latency of fuINT[1]: 185
+
+
+FP FU
+Broadcasting instruction:
+lbu       r3,-3(r4)		156	175	179	183
+1 0 0 1 0 1 0
+---------------------------------------
+Cycle: 184
+RS int available: 0, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+0: addiu     r2,r4,-3		158	176	181	0
+1: lbu       r3,-2(r4)		167	179	183	0
+2: addiu     r2,r4,-2		168	181	0	0
+3: addiu     r29,r29,16		171	183	0	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-2(r4)		167	179	183	0
+Latency of fuINT[0]: 187
+1: addiu     r2,r4,-3		158	176	181	0
+Latency of fuINT[1]: 185
+
+
+FP FU
+1 1 0 1 0 1 1
+---------------------------------------
+Cycle: 185
+RS int available: 1, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+1: lbu       r3,-2(r4)		167	179	183	0
+2: addiu     r2,r4,-2		168	181	185	0
+3: addiu     r29,r29,16		171	183	0	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-2(r4)		167	179	183	0
+Latency of fuINT[0]: 187
+1: addiu     r2,r4,-2		168	181	185	0
+Latency of fuINT[1]: 189
+
+
+FP FU
+Broadcasting instruction:
+addiu     r2,r4,-3		158	176	181	185
+1 1 0 1 0 1 0
+---------------------------------------
+Cycle: 186
+RS int available: 1, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+1: lbu       r3,-2(r4)		167	179	183	0
+2: addiu     r2,r4,-2		168	181	185	0
+3: addiu     r29,r29,16		171	183	0	0
+
+
+FP RS
+
+
+INT FU
+0: lbu       r3,-2(r4)		167	179	183	0
+Latency of fuINT[0]: 187
+1: addiu     r2,r4,-2		168	181	185	0
+Latency of fuINT[1]: 189
+
+
+FP FU
+1 1 0 1 0 1 1
+---------------------------------------
+Cycle: 187
+RS int available: 2, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+2: addiu     r2,r4,-2		168	181	185	0
+3: addiu     r29,r29,16		171	183	187	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,16		171	183	187	0
+Latency of fuINT[0]: 191
+1: addiu     r2,r4,-2		168	181	185	0
+Latency of fuINT[1]: 189
+
+
+FP FU
+Broadcasting instruction:
+lbu       r3,-2(r4)		167	179	183	187
+1 1 0 1 0 1 0
+---------------------------------------
+Cycle: 188
+RS int available: 2, RS fp available: 2
+FU int available: 0, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+2: addiu     r2,r4,-2		168	181	185	0
+3: addiu     r29,r29,16		171	183	187	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,16		171	183	187	0
+Latency of fuINT[0]: 191
+1: addiu     r2,r4,-2		168	181	185	0
+Latency of fuINT[1]: 189
+
+
+FP FU
+1 1 0 1 0 1 1
+---------------------------------------
+Cycle: 189
+RS int available: 3, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+3: addiu     r29,r29,16		171	183	187	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,16		171	183	187	0
+Latency of fuINT[0]: 191
+
+
+FP FU
+Broadcasting instruction:
+addiu     r2,r4,-2		168	181	185	189
+1 1 0 1 0 1 0
+---------------------------------------
+Cycle: 190
+RS int available: 3, RS fp available: 2
+FU int available: 1, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+3: addiu     r29,r29,16		171	183	187	0
+
+
+FP RS
+
+
+INT FU
+0: addiu     r29,r29,16		171	183	187	0
+Latency of fuINT[0]: 191
+
+
+FP FU
+1 1 0 1 0 1 1
+---------------------------------------
+Cycle: 191
+RS int available: 4, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+Broadcasting instruction:
+addiu     r29,r29,16		171	183	187	191
+1 1 1 1 1 1 0
+---------------------------------------
+Cycle: 192
+RS int available: 4, RS fp available: 2
+FU int available: 2, FU fp available: 1
+Head: 0
+Tail: 0
+Insn Queue Size: 0
+0: beq       r3,r0,0x5fea98
+1: lbu       r3,-3(r4)
+2: addiu     r2,r4,-3
+3: beq       r3,r5,0x5feaa0
+4: beq       r3,r0,0x5fea98
+5: lbu       r3,-2(r4)
+6: addiu     r2,r4,-2
+7: beq       r3,r5,0x5feaa0
+8: addiu     r29,r29,16
+9: jr        r31
+
+
+INT RS
+
+
+FP RS
+
+
+INT FU
+
+
+FP FU
+1 1 1 1 1 1 1
+---------------------------------------
